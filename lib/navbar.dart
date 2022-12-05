@@ -42,7 +42,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
       body: _body(),
       bottomNavigationBar: Container(
         color: Colors.white,
-        padding: EdgeInsets.symmetric(horizontal: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 25),
         child: BottomNavigationBar(
           currentIndex: currentIndex,
           onTap: (value) {
@@ -57,52 +57,52 @@ class _BottomNavbarState extends State<BottomNavbar> {
           items: [
             BottomNavigationBarItem(
               icon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/home_icon.png'),
               ),
               label: '',
               activeIcon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/home_icon_filled.png'),
               ),),
             BottomNavigationBarItem(
               label: '',
               icon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/menu_icon.png'),
               ),
               activeIcon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/menu_icon_filled.png'),
               ),),
             BottomNavigationBarItem(
               label: '',
               icon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/statistic_icon.png'),
               ),
               activeIcon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/statistic_icon_filled.png'),
               ),),
             BottomNavigationBarItem(
               label: '',
               icon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/counselor_icon.png'),
               ),
               activeIcon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/counselor_icon_filled.png'),
               ),),
             BottomNavigationBarItem(
               label: '',
               icon: Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/profile_icon.png'),
               ),
               activeIcon:  Padding(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Image.asset('assets/bottom_navbar_icon/profile_icon.png'),
               ),),
           ],
