@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:me_doc/custom%20widgets/colors/colors.dart';
+import 'package:me_doc/custom%20widgets/textstyle/textstyle.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -67,107 +68,110 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget expression() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Color(0xffEF5DA8),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Color(0xffEF5DA8),
+                ),
+                // width: MediaQuery.of(context).size.width/5,
+                height: MediaQuery.of(context).size.height / 13,
+                padding: EdgeInsets.all(12),
+                child: Image.asset('assets/happy_face.png'),
               ),
-              // width: MediaQuery.of(context).size.width/5,
-              height: MediaQuery.of(context).size.height / 13,
-              padding: EdgeInsets.all(12),
-              child: Image.asset('assets/happy_face.png'),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            Text(
-              'Senang',
-              style: GoogleFonts.poppins(
-                  fontSize: 12, fontWeight: FontWeight.w400),
-            )
-          ],
-        ),
-        SizedBox(
-          width: MediaQuery.of(context).size.width / 18,
-        ),
-        Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Color(0xffC7F466),
+              SizedBox(
+                height: 8,
               ),
-              // width: 72,
-              height: MediaQuery.of(context).size.height / 13,
-              padding: EdgeInsets.all(12),
-              child: Image.asset('assets/poker_face.png'),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            Text(
-              'Biasa',
-              style: GoogleFonts.poppins(
-                  fontSize: 12, fontWeight: FontWeight.w400),
-            )
-          ],
-        ),
-        SizedBox(
-          width: MediaQuery.of(context).size.width / 18,
-        ),
-        Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Color(0xff4DCCC1),
+              Text(
+                'Senang',
+                style: GoogleFonts.poppins(
+                    fontSize: 12, fontWeight: FontWeight.w400),
+              )
+            ],
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width / 18,
+          ),
+          Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Color(0xffC7F466),
+                ),
+                // width: 72,
+                height: MediaQuery.of(context).size.height / 13,
+                padding: EdgeInsets.all(12),
+                child: Image.asset('assets/poker_face.png'),
               ),
-              // width: 72,
-              height: MediaQuery.of(context).size.height / 13,
-              padding: EdgeInsets.all(12),
-              child: Image.asset('assets/sad_face.png'),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            Text(
-              'Sedih',
-              style: GoogleFonts.poppins(
-                  fontSize: 12, fontWeight: FontWeight.w400),
-            )
-          ],
-        ),
-        SizedBox(
-          width: MediaQuery.of(context).size.width / 18,
-        ),
-        Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Color(0xffFF696B),
+              SizedBox(
+                height: 8,
               ),
-              // width: 72,
-              height: MediaQuery.of(context).size.height / 13,
-              padding: EdgeInsets.all(12),
-              child: Image.asset('assets/angry_face.png'),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            Text(
-              'Marah',
-              style: GoogleFonts.poppins(
-                  fontSize: 12, fontWeight: FontWeight.w400),
-            )
-          ],
-        ),
-      ],
+              Text(
+                'Biasa',
+                style: GoogleFonts.poppins(
+                    fontSize: 12, fontWeight: FontWeight.w400),
+              )
+            ],
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width / 18,
+          ),
+          Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Color(0xff4DCCC1),
+                ),
+                // width: 72,
+                height: MediaQuery.of(context).size.height / 13,
+                padding: EdgeInsets.all(12),
+                child: Image.asset('assets/sad_face.png'),
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                'Sedih',
+                style: GoogleFonts.poppins(
+                    fontSize: 12, fontWeight: FontWeight.w400),
+              )
+            ],
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width / 18,
+          ),
+          Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Color(0xffFF696B),
+                ),
+                // width: 72,
+                height: MediaQuery.of(context).size.height / 13,
+                padding: EdgeInsets.all(12),
+                child: Image.asset('assets/angry_face.png'),
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                'Marah',
+                style: GoogleFonts.poppins(
+                    fontSize: 12, fontWeight: FontWeight.w400),
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 
@@ -176,7 +180,7 @@ class _HomePageState extends State<HomePage> {
       children: [
         Text(
           'Mengatasi Gangguan Kesehatan Mental',
-          style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500),
+          style: SubJudul(),
         )
       ],
     );
@@ -337,10 +341,10 @@ class _HomePageState extends State<HomePage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(height: 10,),
                     Text(
                       "Tentang Kesehatan Mental",
-                      style: GoogleFonts.poppins(
-                          fontSize: 14, fontWeight: FontWeight.w500),
+                      style: SubJudul()
                     ),
                     Text(
                       "Edukasi tentang kesehatan Mental",
@@ -445,6 +449,7 @@ class _HomePageState extends State<HomePage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(height: 10,),
                     Text(
                       "Rekomendasi Meditasi",
                       style: GoogleFonts.poppins(
@@ -717,15 +722,17 @@ class ArtikelList extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  height: MediaQuery.of(context).size.height / 8,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color(0xffF3F6F6),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width / 2,
+                    height: MediaQuery.of(context).size.height / 8,
+                    decoration: BoxDecoration(
+                    ),
+                    child: Image.asset("assets/mental.png", fit: BoxFit.cover,),
                   ),
-                  child: Image.asset("assets/mental.png"),
                 ),
+                SizedBox(height: 5,),
                 Container(
                   width: MediaQuery.of(context).size.width / 2,
                   child: Text("Apa itu Kesehatan Mental?",
